@@ -16,6 +16,8 @@ This repository contains the source code for a Carbon Dioxide (CO2) Calculator, 
 
 ## Getting Started
 
+To test the CO2 Calculator, you can enter in the following URL: https://javivi-mr.github.io/CalculadO2/
+
 To run the CO2 Calculator locally:
 
 1. Clone this repository.
