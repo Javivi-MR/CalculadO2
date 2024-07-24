@@ -29,7 +29,7 @@ To run the CO2 Calculator locally:
 - **Isabel Becerra Losada** - IsabelBelosa (https://github.com/IsabelBelosa)
 - **Duván Beltrán Sánchez** - ElDuviss (https://github.com/ElDuviss)
 - **Jorge Ibáñez Romero** - JorgeIR17 (https://github.com/JorgeIR17)
-- **Maria del Carmen Letrán Andrades** - jesmalean (https://github.com/jesmalean)
+- **María del Carmen Letrán Andrades** - jesmalean (https://github.com/jesmalean)
 - **Adriana Maña Watson** - KukiMW (https://github.com/KukiMW)
 - **Francisco Javier Molina Rojas** - Javivi-MR (https://github.com/Javivi-MR)
 - **Alejandro Sánchez Castillo** - Ascastillo98 (https://github.com/Ascastillo98)
