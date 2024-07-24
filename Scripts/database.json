@@ -1,0 +1,48 @@
+{
+    "type": "common.js",
+    
+    "Envases":
+    {
+        "Envase": 3.5,
+        "Carton": 1.2,
+        "Papel": 1.8,
+        "PapelyCarton": 1.6,
+        "Vidrio": 0.3
+    },
+    "Energia":
+    {
+        "Gasoil": 2.64,
+        "GasNatural": 0.182,
+        "BiomasaNormal": 0.23,
+        "BiomasaCombustion": 0.74,
+        "Indeterminada": 0.97,
+        "Renovable": 0.052,
+        "Hidraulica": 0.126,
+        "Eolica": 0.012,
+        "Nuclear": 0.012,
+        "Solar": 0.048
+    },
+    "Transporte":
+    {
+        "Gasolina1l": 2.35,
+        "Diesel1l": 2.65,
+        "CGasolina": 0.2372,
+        "CDiesel": 0.204,
+        "MGasolina": 0.071,
+        "MDiesel": 0.065,
+        "Camion": 1.484,
+        "Bus": 1.484
+    },
+    "Practicas":
+    {
+        "Plastico": -1.8,
+        "Papel":-0.9,
+        "Vidrio":-0.15,
+        "Andar": 0,
+        "CocheElec": 0,
+        "BusElec": 0,
+        "Bici": 0,
+        "MotoElec": 0,
+        "EnerProd": 0
+    }
+}

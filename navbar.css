@@ -1,0 +1,605 @@
+
+/*CABECERA*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+
+*{
+    font-family: "Open Sans",Arial,sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    cursor : url("img/nube1.png"), 
+    auto;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#f{
+    margin-left: 2%;
+    width: 8%;
+}
+
+
+h1{ font-size: 3.5em;}
+h3{ font-size: 2em; color: white}
+.container p{ font-size: 1.5em; color: white}
+ul{ list-style: none;}
+li{ font-size: 1.5em;}
+.carta li{ font-size: 1em;}
+
+/*Botones +info*/
+
+summary{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #203c6d;
+}
+
+.container .info{
+    color:white;
+    font-size: 1.5em;
+    z-index: 100;
+}
+
+/* #fotocal{
+    z-index: 100;
+} */
+/*Botones calculadora*/
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #d33f3f;
+}
+
+button:hover{
+    background-color: rgb(131, 39, 39);
+
+    cursor : url("img/nube1.png"), 
+    auto;
+}
+
+
+/* Botones de idiomas */
+.lang {
+    float:left;
+    opacity: 1.0;
+}
+
+/* Boton de ingles*/
+.lang .Eng{
+    cursor : url("img/nube1.png"), 
+    auto;
+
+    filter: brightness(115%);
+
+    background-image: url("img/Ingles.png");
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding:10px 12px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0);
+    right: 35px;
+    height: 40px;
+    position: relative;
+    width: 40px;
+
+}
+
+.Eng:before {
+	content: "";
+	position: absolute;
+	top: 9.5px;
+	left: 0px;
+	width: 40px;
+    height: 21px;
+	background: transparent;
+    transition: background .2s linear;
+}
+.Eng:hover:before {
+    background: rgba(0, 0, 0, .3);
+ }
+
+/* Boton de español */
+.lang .Esp{
+    cursor : url("img/nube1.png"), 
+    auto;
+
+    filter: brightness(120%);
+
+    background-image: url("img/Espanol.png");
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding:10px 12px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0);
+    right: 25px;
+    height: 40px;
+    position: relative;
+    width: 40px;
+}
+
+.Esp:before {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	width: 40px;
+    height: 22px;
+	background: transparent;
+    transition: background .2s linear;
+}
+.Esp:hover:before {
+    background: rgba(0, 0, 0, .2);
+ }
+
+ /* Foto Vaca */
+ #foto{
+    width:30%;
+ }
+
+ #foto2{
+    width:13%;
+ }
+/*CONTAINER*/
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    color: black;
+
+}
+/*---------------*/
+.color-acento{ color:#203c6d; }
+
+header{
+    background-color:#ff1d16;
+    background-image: linear-gradient(
+        0deg,
+        rgba(154, 142, 142, 0.5),
+        rgba(205, 22, 22, 0.256)
+    );
+    font-size: 3ex;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 3ex;
+    position: relative;
+    /* Original: right:10% */
+    right: 7%;
+}
+
+/*CONTAINER DE LA CABECERA*/
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*---------------*/
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    position: relative;
+    right: 10%;
+}
+header nav.lang{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    position: relative;
+    top: -40px;
+}
+
+header a{
+    cursor : url("img/nube1.png"), 
+    auto;
+    
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover{
+    color: #ec7171;
+}
+
+/*PRINCIPIO*/
+
+#principio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(146, 127, 127, 0.5)
+    )
+    ,url("img/fondo_principio.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#principio h1{
+    color: white;
+}
+
+#principio button{
+    font-size: 1.75em;
+}
+/*CONTAINER MEDIO*/
+#medio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    background: linear-gradient(to bottom right, rgb(66, 66, 66));
+}
+#medio .container{
+    height: 20%;
+    text-align: center;
+    padding: 200px 12px;
+    background-color: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+/*---------------*/
+
+/*DATOS DE INTERÉS*/
+
+#informacion{
+    background-color: rgb(144, 169, 212);
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.13),
+        rgba(87, 82, 82, 0.781)
+    )
+    ,url("img/clouds.jpg");
+    color: white;
+    text-align: center;
+}
+
+
+#informacion .container{
+    padding: 150px 12px;
+}
+
+#informacion h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#informacion p{
+    display: none;
+}
+
+#informacion li{
+    text-align: left;
+}
+
+#informacion .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+
+/*Primera capa de las cartas color de fondo y brillo alrrededor*/
+
+.carta:first-child{
+   background-image: linear-gradient(
+        0deg,
+        #00437a,
+        rgb(113, 159, 211)
+    )
+}
+
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        #00437a,
+        rgb(113, 159, 211)
+    )
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        #00437a,
+        rgb(113, 159, 211)
+    )
+
+}
+
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+    margin: 10%;
+    position: relative;
+    top: -20%;
+}
+#final a{
+    position: relative;
+    top: -35%;
+    left: 10%;
+
+}
+
+/* Nubes */
+.clouds{
+transform: translate(-50%, -50%);
+position: relative;
+top: 44%;
+left: 50%;
+width:100%;
+height: 85%;
+}
+@keyframes clouds-loop-1 {
+to {
+  background-position: -1000px 0;
+}
+}
+.clouds-1 {
+background-image: url("img/cloud1.png");
+animation: clouds-loop-1 20s infinite linear;
+}
+
+@keyframes clouds-loop-2 {
+to {
+  background-position: -1000px 0;
+}
+}
+.clouds-2 {
+background-image: url("img/cloud2.png");
+animation: clouds-loop-2 15s infinite linear;
+}
+
+@keyframes clouds-loop-3 {
+to {
+  background-position: -1579px 0;
+}
+}
+.clouds-3 {
+background-image: url("img/cloud3.png");
+animation: clouds-loop-3 17s infinite linear;
+}
+
+.clouds-1,
+.clouds-2,
+.clouds-3 {
+background-repeat: repeat-x;
+position: absolute;
+top: 60%;
+right: 0;
+left: 0;
+height: 400px;
+}
+
+#final button{
+    font-size: 5vw;
+    position: absolute;
+    top:500%;
+    right: 40%;
+    z-index: 100; 
+}
+
+footer{
+    background-color: rgb(230,230,230);
+    position: relative;
+    bottom: 300%;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+}
+
+/* footer .container{
+    justify-content: center;
+    align-items: flex-end;
+} */
+
+footer #copy {
+    text-align: center;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #principio h1{
+        font-size: 5em;
+    }
+
+    #medio .container{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    #medio .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        background-color:#ffffff;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(0,0,0,0);
+
+    }
+
+    #medio h2{
+        margin-top: 15%;
+        font-size: 4em;
+    }
+
+    #medio .imagenco2{
+        background-image: url("img/co2.png");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px; 
+        
+        margin-top: -25%;
+        margin-right: 10%;
+    }
+
+    #informacion .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #informacion p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #informacion h2{
+        font-size: 4em;
+    }
+
+    #informacion h3{
+        margin-top: 0;
+
+    }
+
+    #informacion .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(34, 69, 115);
+        box-shadow: 2px 2px 10px rgb(64, 121, 226);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            #00437a,
+            rgb(113, 159, 211)
+        )
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            #00437a,
+            rgb(113, 159, 211)
+        )
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            #00437a,
+            rgb(113, 159, 211)
+        )
+    }
+
+    #caracteristicas{
+        height: 100%;
+        width: 100%;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+        background-image: url("img/logo_marea.png");
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+        background-position: bottom right;
+        margin-bottom: 10%;
+    }
+
+    #caracteristicas ul{
+        font-size: 1.25em;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}

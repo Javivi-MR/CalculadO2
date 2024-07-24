@@ -1,0 +1,64 @@
+{
+    "type": "common.js",
+    
+    "Envases":
+    {
+        "Botella8l": 0.382,
+        "Botella5l": 0.262,
+        "Botella2l": 0.163,
+        "Botella15l": 0.157,
+        "Botella1l": 0.119,
+        "Botella500ml": 0.07,
+        "Botellin33cl": 0.067,
+        "Botellin50cl": 0.071,
+        "Botellin1l": 0.096,
+        "Lata50cl": 0.121,
+        "Lata33cl": 0.091
+    },
+    "Energia":
+    {
+        "Gasoil": 2.64,
+        "GasNatural": 0.182,
+        "BiomasaNormal": 0.23,
+        "BiomasaCombustion": 0.74,
+        "Indeterminada": 0.97,
+        "Renovable": 0.052,
+        "Hidraulica": 0.126,
+        "Eolica": 0.012,
+        "Nuclear": 0.012,
+        "Solar": 0.048
+    },
+    "Transporte":
+    {
+        "KmGasolina": 0.2213,
+        "KmDiesel": 0.2488,
+        "CGasolina": 0.2213,
+        "CDiesel": 0.2488,
+        "MGasolina": 0.071,
+        "MDiesel": 0.065,
+        "Bus": 1.484
+    },
+    "Practicas":
+    {
+        "Plastico": -1.8,
+        "Papel":-0.9,
+        "Vidrio":-0.15,
+        "Botella8l": -0.197,
+        "Botella5l": -0.135,
+        "Botella2l": -0.084,
+        "Botella15l": -0.081,
+        "Botella1l": -0.061,
+        "Botella500ml": -0.036,
+        "Botellin500ml": -0.021,
+        "Botellin33cl": -0.034,
+        "Botellin1l": -0.061,
+        "Lata500ml": -0.059,
+        "Lata33cl": -0.040,
+        "Andar": 0,
+        "CocheElec": 0,
+        "BusElec": 0,
+        "Bici": 0,
+        "MotoElec": 0,
+        "Electricapropia": 0
+    }
+}

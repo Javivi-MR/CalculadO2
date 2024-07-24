@@ -1,0 +1,90 @@
+/* Inicio / Home */
+
+
+body{ margin: 0; font-family: 'Roboto Condensed', sans-serif; background: #224573;}
+
+.cursor{
+    cursor : url("img/nube1.png"), 
+    auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(bg.jpg) center;
+    background-size: cover;
+    height: 100vh;
+}
+.left{ 
+    background: linear-gradient(#D93B3B, rgba(224, 27, 27, 0.411));
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right{
+    background: linear-gradient(#203c6d, rgba(0, 0, 255, 0.411));
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.left h2{ 
+    color:  white; 
+    font-size: 50px; 
+} 
+
+.left p{ 
+    color: white; 
+    font-size: 20px; 
+}
+
+.left a{ 
+    border-radius: 25px; 
+    border: 1px solid white; 
+    text-decoration: none; 
+    padding: 10px 50px; 
+    transition: background 1s; 
+    color:white;
+}
+
+.left a:hover{ 
+    background: white; 
+    color:#f2561d;
+
+    cursor : url("img/nube1.png"), 
+    auto;
+}
+
+.right h2{ 
+    color:  white; 
+    font-size: 50px;
+} 
+
+.right p{ 
+    color: white; 
+    font-size: 20px; 
+}
+
+.right a{ 
+    border-radius: 25px; 
+    border: 1px solid white; 
+    text-decoration: none; 
+    padding: 10px 50px; 
+    transition: background 1s; 
+    color:white;
+}
+
+.right a:hover{ 
+    background: white; 
+    color:blue;
+
+    cursor : url("img/nube1.png"), 
+    auto; 
+}
+
+#copy {
+    text-align: center;
+}

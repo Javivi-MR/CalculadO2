@@ -1,0 +1,164 @@
+/*begin-commonstyles library*//*!
+ * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
+ * License https://froala.com/wysiwyg-editor/terms/
+ * Copyright 2014-2021 Froala Labs
+ */
+
+
+
+/*CUADRADO AZUL*/
+
+
+body{
+  font-family: "Open Sans",Arial,sans-serif;
+}
+
+.u-custom-color-2,
+.u-body.u-custom-color-2,
+.u-custom-color-2:before,
+.u-custom-color-2 > .u-container-layout:before,
+.u-custom-color-2 > .u-inner-container-layout:before,
+.u-custom-color-2.u-sidenav:before,
+.u-container-layout.u-container-layout.u-custom-color-2:before,
+.u-table-alt-custom-color-2 tr:nth-child(even)
+{
+    background-color: #203c6d;
+}
+
+/*BOTON SABER MÁS*/
+.u-btn {
+  display: table;
+  padding: 10px 30px;
+  border-radius: 0;
+  align-self: flex-start;
+}
+
+.u-custom-color-1,
+        .u-body.u-custom-color-1,
+        section.u-custom-color-1:before,
+        .u-custom-color-1 > .u-container-layout:before,
+        .u-custom-color-1 > .u-inner-container-layout:before,
+        .u-custom-color-1.u-sidenav:before,
+        .u-container-layout.u-container-layout.u-custom-color-1:before,
+        .u-table-alt-custom-color-1 tr:nth-child(even)
+        {
+            color: #ffffff;
+            background-color: #ff1d16;
+        }
+
+a {
+  text-decoration: none;
+}
+
+/*FORMA DEL BOTON*/
+
+.u-radius-50,
+.u-radius-50:before,
+.u-radius-50 .u-background-effect,
+.u-radius-50:not(.u-hover-box) > .u-container-layout {
+  border-radius: 50px !important;
+}
+
+/*FORMA DE LAS CAJAS BLANCAS*/
+
+.u-radius-10,
+.u-radius-10:before,
+.u-radius-10 .u-background-effect,
+.u-radius-10:not(.u-hover-box) > .u-container-layout {
+  border-radius: 10px !important;
+}
+
+
+.u-group {
+  display: flex;
+}
+
+.u-layout-col,
+.u-layout-row,
+.u-layout-col > *,
+.u-layout-row > * {
+  display: flex;
+}
+
+
+/*INICIO*/
+body,
+aside,
+.u-sidebar-block,
+section,
+header,
+footer {
+  position: relative;
+}
+section > *,
+header > *,
+footer > *,
+.u-sheet > *,
+.u-section-row > * {
+  position: relative;
+}
+
+/*SOBRE NOSOTROS*/
+
+.u-text-custom-color-1,
+li.active > a.u-button-style.u-text-custom-color-1,
+li.active > a.u-button-style.u-text-custom-color-1,
+a.u-button-style.u-text-custom-color-1,
+a.u-button-style.u-text-custom-color-1
+{
+    color: #ff1d16;
+}
+
+
+
+
+.u-white,
+.u-body.u-white,
+section.u-white:before,
+.u-white > .u-container-layout:before,
+.u-white > .u-inner-container-layout:before,
+.u-white.u-sidenav:before,
+.u-container-layout.u-container-layout.u-white:before,
+.u-table-alt-white tr:nth-child(even) {
+  color: #111111;
+  background-color: #ffffff;
+}
+
+
+/*PROYECTO GAIA*/
+
+.u-text-custom-color-2,
+li.active > a.u-button-style.u-text-custom-color-2,
+li.active > a.u-button-style.u-text-custom-color-2[class*="u-border-"],
+a.u-button-style.u-text-custom-color-2,
+a.u-button-style.u-text-custom-color-2[class*="u-border-"]
+{
+    color: #203c6d;
+}
+
+.u-align-center {
+  text-align: center;
+}
+
+
+
+/*POSICIONES DE FOTOS Y CAJAS*/
+
+.u-image,
+.u-background-effect-image,
+.u-video-poster {
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#vaca{
+  /* margin: auto 5px; */
+  float: right;
+  width: 30%;
+  left:-15%;
+  margin-top: 6%;
+  /* height: 38px; */
+}

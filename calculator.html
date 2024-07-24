@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalculadO2</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/vaca_cara.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="pestanas.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="archivo.js"></script>
+    <script type="text/javascript" src="Scripts/mainen.js"></script>
+</head>
+<body>
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<header>
+  <div class="container">
+          <img id="f" src="img/LOGO_CINGLES.png" align="right" width="8%">
+          <p class="logo"><a href='home.html' align="left"><span class="color-acento">C</span>alculad<span class="color-acento">O<sub>2</sub></span></a></p>
+      <nav>
+        <a href="en.html">Home</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="About_us.html">About us</a>
+      </nav> 
+      <ul class="lang">
+        <a class='Eng'href="calculator.html">Idioma1</a>
+        <a class='Esp'href="calculadora.html">Idioma2</a>
+      </ul>     
+  </div>
+</header>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<div class="contenedor">
+<div id="pestanas">
+<ul id=lista>
+<h4>
+  <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Consumption</a></li>
+  <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Good habits</a></li>
+  <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);' onclick="calculaJSON()">Calculate</a></li>
+</h4>
+</ul>
+</div>
+<body 
+onload="javascript:cambiarPestanna(pestanas,pestana1);">
+<div id="contenidopestanas">
+<div id="cpestana1">
+  <details>
+    <summary> Packaging </summary>
+    <label name="envp" value="1">Enter the kg of containers you have used:</label><br/>
+    <input type="number" value="0" id="envp" /><br/>
+    <label name="envpc" value="2">Enter the kg of carton containers you have used:</label><br/>
+    <input type="number" value="0" id="envpc" /><br/>
+    <label name="envc" value="7">Enter the kg of glass bottle you have used:</label><br/>
+    <input type="number" value="0" id="envc" /><br/>
+
+  </details>
+  <details>
+    <summary> Energy </summary>
+    <label>Choose the energy you have produced:</label><br/>
+          <label name="gasoil" value="1">- Gasoil<br/>
+          <label>Enter the liters consumed:</label><br/>
+          <input type="number" value="0" id="gasoil"/><br/>
+          <label name="gasnatural" value="2">- Natural gas<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="gasnatural"/><br/>
+          <label name="bionormal" value="3">- Normal Biomass<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="bionormal" /><br/>
+          <label name="biocombustion" value="4">- Combustion biomass <br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="biocombustion"/><br/>
+          <label name="hidraulica" value="5">- Hydraulics<br/>
+            <label>Introduce los kw/h consumidos:</label><br/>
+            <input type="number" value="0" id="hidraulica"/><br/>
+            <label name="eolica" value="6">- Wind<br/>
+            <label>Introduce los kw/h consumidos:</label><br/>
+            <input type="number" value="0" id="eolica"/><br/>
+            <label name="nuclear" value="7">- Nuclear<br/>
+            <label>Introduce los kw/h consumidos:</label><br/>
+            <input type="number" value="0" id="nuclear"/><br/>
+            <label name="solar" value="8">- Solar<br/>
+            <label>Introduce los kw/h consumidos:</label><br/>
+            <input type="number" value="0" id="solar"/><br/>
+          <label name="indeterminada" value="9">- Indeterminate<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="indeterminada" /><br/>
+          <label name="renovable" value="10">- Renewable<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="renovable"/><br/>
+        </details>
+        <details>
+          <summary> Transport </summary>
+          <label>Choose the transport you have used:</label><br/>
+          <label name="cgasolina" value="1">- Car (gasoline)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="cgasolina"/><br/>
+            <label name="cdiesel" value="2">- Car (diesel)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="cdiesel"/><br/>
+            <label name="mgasolina" value="3">- Motorbike (gasoline)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="mgasolina"/><br/>
+            <label name="mdiesel" value="4">- Motorbike (diesel)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="mdiesel" /><br/>
+            <label name="bus" value="4">- Bus<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="bus"/><br/>
+            <label name="camion" value="4">- Truck<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="camion"/><br/>
+</div>
+<div id="cpestana2">
+  <details>
+    <summary> Recycling </summary>
+    <label>Choose recycled materials:</label><br/>
+    <label name="palsticorec" value="1">- Plastic<br/>
+    <label>Enter the kg recycled:</label><br/>
+    <input type="number" value="0" id="palsticorec"/><br/>
+    <label name="papelrec" value="2">- Paper<br/>
+    <label>Enter the kg recycled:</label><br/>
+    <input type="number" value="0" id="papelrec"/><br/>
+    <label name="vidriorec" value="3">- Glass<br/>
+    <label>Enter the kg recycled:</label><br/>
+    <input type="number" value="0" id="vidriorec"/><br/>
+  </details>
+  <details>
+    <summary> Transport </summary>
+    <label>Choose the transport used:</label><br/>
+    <label name="andar" value="1">- Walk<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="andar"/><br/>
+    <label name="cochelec" value="2">- Electric car<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="cochelec"/><br/>
+    <label name="buselec" value="3">- Electric bus<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="buselec"/><br/>
+    <label name="bici" value="4">- Bike<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="bici"/><br/>
+    <label name="motoelec" value="5">- Electic motorbike<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="motoelec"/><br/>
+  </details>
+  <details>
+    <summary> Energy </summary>
+    <label name="energiaprod" value="1">Enter the energy produced by yourself:</label><br/>
+    <label>Enter the kW/h consumed:</label><br/>
+    <input type="number" value="0" id="energiaprod"/><br/>
+  </details>
+</div>
+<div id="cpestana3">
+  <p class="texto"id="desgloseEnvases"></p>
+  <p class="texto"id="desgloseEnergía"></p>
+  <p class="texto"id="desgloseTransporte"></p>
+  <p class="texto"id="desglosePrácticas"></p>
+  <p class="texto"id="demo"></p>
+  <img id="foto" src="img/vaca_IZQ.png" align="right" width="25%">
+</div>
+</div>
+</div>
+<footer>
+<div id="copy">
+    <p>&copy; CalculadO<sub>2</sub> 2023</p>
+</div>
+</footer>
+
+      </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalculadO2</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/vaca_cara.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="pestanas.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="archivo.js"></script>
+    <script type="text/javascript" src="Scripts/persen.js"></script>
+</head>
+<body>
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<header>
+  <div class="container">
+          <img id="f" src="img/LOGO_CINGLES.png" align="right" width="8%">
+          <p class="logo"><a href='home.html' align="left"><span class="color-acento">C</span>alculad<span class="color-acento">O<sub>2</sub></span></a></p>
+      <nav>
+        <a href="enp.html">Home</a>
+        <a href="calculatorp.html">Calculator</a>
+        <a href="About_usp.html">About us</a>
+      </nav> 
+      <ul class="lang">
+        <a class='Eng'href="calculatorp.html">Idioma1</a>
+        <a class='Esp'href="calculadorap.html">Idioma2</a>
+      </ul>     
+  </div>
+</header>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<div class="contenedor">
+<div id="pestanas">
+<ul id=lista>
+<h4>
+  <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Consumption</a></li>
+  <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Good habits</a></li>
+  <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);' onclick="calculaJSON()">Calculate</a></li>
+</h4>
+</ul>
+</div>
+<body 
+onload="javascript:cambiarPestanna(pestanas,pestana1);">
+<div id="contenidopestanas">
+<div id="cpestana1">
+  <details>
+    <summary> Packaging </summary>
+    <label name="envp500" value="1">Enter the amount of containers you have used of 500ml (Plastic):</label><br/>
+    <input type="number" value="0" id="envp500" /><br/>
+    <label name="envp1000" value="2">Enter the amount of containers you have used of 1L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp1000" /><br/>
+    <label name="envp1500" value="3">Enter the amount of containers you have used of 1.5L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp1500" /><br/>
+    <label name="envp2000" value="4">Enter the amount of containers you have used of 2L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp2000" /><br/>
+    <label name="envp5000" value="5">Enter the amount of containers you have used of 5L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp5000" /><br/>
+    <label name="envp8000" value="6">Enter the amount of containers you have used of 8L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp8000" /><br/>
+    <label name="envc330" value="7">Enter the amount of bottle you have used of 33cl (Glass):</label><br/>
+    <input type="number" value="0" id="envc330" /><br/>
+    <label name="envc500" value="8">Enter the amount of bottle you have used of 50cl (Glass):</label><br/>
+    <input type="number" value="0" id="envc500" /><br/>
+    <label name="envc1000" value="1">Enter the amount of bottle you have used of 1L (Glass):</label><br/>
+    <input type="number" value="0" id="envc1000" /><br/>
+    <label name="enva330" value="9">Enter the amount of cans you have used of 330ml (Aluminium):</label><br/>
+    <input type="number" value="0" id="enva330" /><br/>
+    <label name="enva500" value="10">Enter the amount of cans you have used of 500ml (Aluminium):</label><br/>
+    <input type="number" value="0" id="enva500" /><br/>
+
+  </details>
+  <details>
+    <summary> Energy </summary>
+    <label>Choose the energy you have produced:</label><br/>
+          <label name="gasoilp" value="1">- Gasoil<br/>
+          <label>nter the liters consumed:</label><br/>
+          <input type="number" value="0" id="gasoilp"/><br/>
+          <label name="gasnaturalp" value="2">- Natural gas<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="gasnaturalp"/><br/>
+          <label name="bionormalp" value="3">- Normal Biomass<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="bionormalp" /><br/>
+          <label name="biocombustionp" value="4">- Combustion biomass <br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="biocombustionp"/><br/>
+          <label name="indeterminadap" value="5">- Indeterminate<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="indeterminadap" /><br/>
+          <label name="renovablep" value="6">- Renewable<br/>
+          <label>Enter  the kw/h consumed:</label><br/>
+          <input type="number" value="0" id="renovablep"/><br/>
+        </details>
+        <details>
+          <summary> Transport </summary>
+          <label>Choose the transport you have used:</label><br/>
+          <label name="cgasolinap" value="1">- Car (gasoline)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="cgasolinap"/><br/>
+            <label name="cdieselp" value="2">- Car (diesel)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="cdieselp"/><br/>
+            <label name="mgasolinap" value="3">- Motorbike (gasoline)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="mgasolinap"/><br/>
+            <label name="mdieselp" value="4">- Motorbike (diesel)<br/>
+            <label>Enter km traveled:</label><br/>
+            <input type="number" value="0" id="mdieselp" /><br/>
+            <label name="busp" value="4">- Bus<br/>
+              <label>Enter km traveled:</label><br/>
+              <input type="number" value="0" id="busp"/><br/>
+</div>
+<div id="cpestana2">
+  <details>
+    <summary> Recycling </summary>
+    <label>Choose recycled materials:</label><br/>
+    <label name="envp500recp" value="1">Enter the amount of containers you have recycled of 500ml (Plastic):</label><br/>
+    <input type="number" value="0" id="envp500p" /><br/>
+    <label name="envp1000recp" value="2">Enter the amount of containers you have recycled of 1L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp1000p" /><br/>
+    <label name="envp1500recp" value="3">Enter the amount of containers you have recycled of 1.5L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp1500p" /><br/>
+    <label name="envp2000recp" value="4">Enter the amount of containers you have recycled of 2L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp2000p" /><br/>
+    <label name="envp5000recp" value="5">Enter the amount of containers you have recycled of 5L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp5000p" /><br/>
+    <label name="envp8000recp" value="6">Enter the amount of containers you have recycled of 8L (Plastic):</label><br/>
+    <input type="number" value="0" id="envp8000p" /><br/>
+    <label name="envc330recp" value="7">Enter the amount of bottle you have recycled of 33cl (Glass):</label><br/>
+    <input type="number" value="0" id="envc330p" /><br/>
+    <label name="envc500recp" value="8">Enter the amount of bottle you have recycled of 50cl (Glass):</label><br/>
+    <input type="number" value="0" id="envc500p" /><br/>
+    <label name="envc1000recp" value="1">Enter the amount of bottle you have recycled of 1L (Glass):</label><br/>
+    <input type="number" value="0" id="envc1000p" /><br/>
+    <label name="enva330recp" value="9">Enter the amount of cans you have recycled of 330ml (Aluminium):</label><br/>
+    <input type="number" value="0" id="enva330p" /><br/>
+    <label name="enva500recp" value="10">Enter the amount of cans you have recycled of 500ml (Aluminium):</label><br/>
+    <input type="number" value="0" id="enva500p" /><br/>
+  </details>
+  <details>
+    <summary> Transport </summary>
+    <label>Choose the transport used:</label><br/>
+    <label name="andarp" value="1">- Walk<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="andarp"/><br/>
+    <label name="cochelecp" value="2">- Electric car<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="cochelecp"/><br/>
+    <label name="buselecp" value="3">- Electric bus<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="buselecp"/><br/>
+    <label name="bicip" value="4">- Bike<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="bicip"/><br/>
+    <label name="motoelecp" value="5">- Electic motorbike<br/>
+    <label>Enter km traveled:</label><br/>
+    <input type="number" value="0" id="motoelecp"/><br/>
+  </details>
+  <details>
+    <summary> Energy </summary>
+    <label name="energiap" value="1">Enter the energy produced by yourself:</label><br/>
+    <label>Enter the kW/h consumed:</label><br/>
+    <input type="number" value="0" id="energiap"/><br/>
+  </details>
+</div>
+<div id="cpestana3">
+  <p class="texto"id="desgloseEnvases"></p>
+  <p class="texto"id="desgloseEnergía"></p>
+  <p class="texto"id="desgloseTransporte"></p>
+  <p class="texto"id="desglosePrácticas"></p>
+  <p class="texto"id="demo"></p>
+  <img id="foto" src="img/vaca_IZQ.png" align="right" width="25%">
+</div>
+</div>
+</div>
+<footer>
+<div id="copy">
+    <p>&copy; CalculadO<sub>2</sub> 2023</p>
+</div>
+</footer>
+
+      </body>
+</html>
